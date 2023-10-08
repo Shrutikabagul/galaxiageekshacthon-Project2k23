@@ -1,0 +1,62 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background image for the webpage */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/quiz_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(3px); /* Optional: Apply a blur effect to the background */
+    z-index: -1;
+}
+
+/* Center the card container vertically and horizontally */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the card */
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 10px; /* Add spacing between cards */
+    max-width: 300px; /* Adjust the maximum card width */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the "Play Now" button */
+.play-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

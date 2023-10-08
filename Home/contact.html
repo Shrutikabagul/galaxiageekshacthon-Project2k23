@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Contact Us - Planetary Tourism System</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Your navigation menu here -->
+      </nav>
+    </header>
+
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Contact Us</h1>
+          <p>
+            We'd love to hear from you! Please fill out the form below to get in
+            touch with us.
+          </p>
+          <!-- Contact Form -->
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <!-- Contact Information -->
+          <h2>Contact Information</h2>
+          <address>
+            <strong>Planetary Tourism System</strong><br />
+            123 Space Avenue<br />
+            Planet Earth<br />
+            Phone: +123-456-7890<br />
+            Email: info@planetarytourism.com
+          </address>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      "
+    >
+      <div class="container">
+        <p>&copy; 2023 Planetary Tourism System</p>
+      </div>
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

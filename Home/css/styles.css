@@ -1,0 +1,402 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background: rgba(0, 0, 30, 0.7); /* Transparent dark blue color */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-left {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-top: 19px;
+    margin-left: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .nav-item:hover {
+    transform: translateY(-3px);
+  }
+  .login-buttons {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .login-buttons a {
+    margin-left: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: lightblue;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-buttons a:hover {
+    background-color: #5bc0de;
+  }
+  
+  .video-banner {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio for video */
+  }
+  
+  #bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .video-heading {
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .video-subheading {
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  
+  .explore-button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: linear-gradient(
+      90deg,
+      rgba(240, 240, 240, 1) 0%,
+      rgba(170, 170, 170, 1) 100%
+    );
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .explore-button:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(170, 170, 170, 1) 0%,
+      rgba(240, 240, 240, 1) 100%
+    );
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 30, 0.5);
+    transition: transform 0.3s;
+    width: calc(33.33% - 40px);
+    margin-bottom: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .book-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .card:hover {
+    transform: translate(0, -5px);
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .video-heading {
+      margin-top: 150px;
+    }
+} 
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 30, 0.5);
+    transition: transform 0.3s;
+    width: calc(33.33% - 20px); /* Adjust the width for three cards in a row */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensure images don't overflow the card */
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .book-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Button width spans the card */
+  }
+  
+  .book-button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
+
+  .login-buttons {
+    display: flex;
+    margin-left: 740px; /* Adjust the right margin to create space on the right */
+  }
+  
+  .login-buttons a {
+    margin-left: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: lightblue;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .login-buttons a:hover {
+    background-color: #5bc0de;
+  }
+
+  
+  .video-banner {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio for video */
+  }
+  
+  #bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .video-content {
+    position: absolute;
+    top: 10%; /* Adjust the top margin as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .video-heading {
+    font-size: 2.8em; /* Reduce the font size for the heading */
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px; /* Reduce the bottom margin for the heading */
+    letter-spacing: 2px;
+  }
+  
+  .video-subheading {
+    font-size: 1.2em; /* Adjust the font size for the subheading */
+    text-transform:none; /* Make the subheading uppercase */
+    margin-bottom: 20px; /* Adjust the bottom margin for the subheading */
+  }
+
+  .explore-button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: linear-gradient(
+      90deg,
+      rgba(240, 240, 240, 1) 0%,
+      rgba(170, 170, 170, 1) 100%
+    );
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .explore-button:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(170, 170, 170, 1) 0%,
+      rgba(240, 240, 240, 1) 100%
+    );
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 30, 0.5);
+    transition: transform 0.3s;
+    width: calc(33.33% - 20px); /* Adjust the width for three cards in a row */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensure images don't overflow the card */
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .book-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Button width spans the card */
+  }
+  
+  .book-button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }  
