@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Planetary Tourism Office</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-left">
+          <a href="index.html" class="nav-item">Home</a>
+          <a href="about.html" class="nav-item">About Us</a>
+          <a href="#cards" class="nav-item">Destinations</a>
+          <a href="contact.html" class="nav-item">Contact us</a>
+          <div class="login-buttons">
+            <a href="sign_up.html">Sign Up</a>
+            <a href="login.html">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="video-banner">
+      <video id="bgVideo" autoplay muted loop>
+        <source src="videos/solar.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-content">
+        <h1 class="video-heading">Galaxiageeks</h1>
+        <h2 class="video-subheading">Planetary Tourism Office</h2>
+        <a href="#" class="explore-button">Explore</a>
+      </div>
+    </section>
+    <section class="cards-container" id="cards">
+      <div class="card">
+        <img src="images/mars_img.png" alt="Image 1" />
+        <div class="card-content">
+          <h2>Mars</h2>
+          <p>
+            Mars, often referred to as the "Red Planet," is the fourth planet
+            from the Sun in our solar system. It's known for its distinctive
+            reddish appearance due to iron oxide on its surface. Mars has been a
+            subject of fascination for astronomers and space enthusiasts for
+            centuries.
+          </p>
+          <button class="book-button" onclick="openMarsPage()">
+            Book Ticket
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/jupiter_img.png" alt="Image 2" />
+        <div class="card-content">
+          <h2>Jupiter</h2>
+          <p>
+            Jupiter is the largest planet in our solar system and a gas giant.
+            It's famous for its immense size and its stunning bands of clouds.
+            Jupiter has a strong magnetic field and dozens of moons, including
+            the four largest known as the Galilean moons: Io, Europa, Ganymede,
+            and Callisto.
+          </p>
+          <button class="book-button" onclick="openJupiterPage()">
+            Book Ticket
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/mercury_img.png" alt="Image 3" />
+        <div class="card-content">
+          <h2>Mercury</h2>
+          <p>
+            Mercury is the closest planet to the Sun and has extreme temperature
+            variations, with scorching hot days and frigid nights. It's a small,
+            rocky planet with a thin atmosphere. Despite its proximity to the
+            Sun, it has frozen water in some craters at its poles.
+          </p>
+          <button class="book-button" onclick="openMercuryPage()">
+            Book Ticket
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/saturn_img.png" alt="Image 4" />
+        <div class="card-content">
+          <h2>Saturn</h2>
+          <p>
+            Saturn is famous for its stunning ring system, which consists of
+            thousands of individual rings made primarily of ice particles. It's
+            the second-largest planet in our solar system and is known for its
+            beautiful appearance through telescopes. Saturn has numerous moons,
+            with Titan being the largest.
+          </p>
+          <button class="book-button" onclick="openSaturnPage()">
+            Book Ticket
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/venus_img.png" alt="Image 4" />
+        <div class="card-content">
+          <h2>Venus</h2>
+          <p>
+            Venus, often called Earth's "sister planet," is the second planet
+            from the Sun and is known for its scorching hot surface due to a
+            thick atmosphere of carbon dioxide. It is similar in size and
+            composition to Earth but experiences extreme greenhouse effects,
+            making it one of the hottest planets in our solar system.
+          </p>
+          <button class="book-button" onclick="openVenusPage()">
+            Book Ticket
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
